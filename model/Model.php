@@ -5,7 +5,7 @@ include 'Student.php';
 class Model{
      public function getStudentDetails(){
 
-         array(
+         return array(
              "st"=>new Student('Arup','22','student'),
              "st1"=>new Student('Bijoy','23','Bussinessman')
          );
