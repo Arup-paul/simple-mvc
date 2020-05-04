@@ -6,5 +6,4 @@ $controller = new Controller();
 
 $controller->invoke();
 
-
 ?>

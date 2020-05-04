@@ -2,25 +2,21 @@
 
 include 'Student.php';
 
-class Model{
-     public function getStudentDetails(){
+class Model {
+    public function getStudentDetails() {
 
-         return array(
-             "st"=>new Student('Arup','22','student'),
-             "st1"=>new Student('Bijoy','23','Bussinessman')
-         );
+        return array(
+            "Arup" => new Student( 'Arup', '22', 'student' ),
+            "Bijoy" => new Student( 'Bijoy', '23', 'Bussinessman' ),
+        );
 
-       
-      }
+    }
 
-      public function getStudent($name){
-          $allStudent = $this->getStudentDetails();
-          return $allStudent['name'];
+    public function getStudent( $title) {
+        $allStudent = $this->getStudentDetails();
+        return $allStudent [$title];
 
-
-
-      }
+    }
 }
-
 
 ?>
